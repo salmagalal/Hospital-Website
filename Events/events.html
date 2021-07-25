@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>events</title>
+        <!-- Site CSS -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="events.css">
+        <link rel="stylesheet" href="font-awesome-master/css/font-awesome.min.css">
+        
+        
+    </head>
+    <body>
+        <!----------------------nav bar---------------------->
+        <nav>
+          <div class="contains">
+              <p><a href="#"><span><i class="fa fa-hand"></i>U</span>MC</a></p>
+              <ul>
+                <li><a href="../IT Project/home.html"target="_blank">Home</a></li>
+                <li><a href="../IT Project/salma.html"target="_blank">Career</a></li>
+                <li><a href="../IT Project/SPECIALITIES.html"target="_blank">Specialties</a></li>
+                <li><a href="../Doctors/doctors.html" target="_blank">Doctors</a></li>
+                <li><a href="../IT Project/NEWS.html"target="_blank">News</a></li>
+                <li><a href="../IT Project/contact.html"target="_blank">Contact Us</a></li>
+                <li><a href="../IT Project/covid.html"target="_blank">COVID-19</a></li>
+                <li><a href="../IT Project/signup.html"target="_blank">Sign Up</a></li>
+                <li><a href="../IT Project/login.html"target="_blank">Log In</a></li>
+      
+               </ul>      
+            </div>
+      </nav>
+
+
+        <!--------------slide show------------------->
+        <div class="slider">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="images/event.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="images/good.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="images/national.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="images/women.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="images/corona.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="images/conference.jpg" style="width:100%">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="images/event.jpg" style="width:100%" onclick="currentSlide(1)" alt="CME">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/good.jpg" style="width:100%" onclick="currentSlide(2)" alt="CME">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/national.jpg" style="width:100%" onclick="currentSlide(3)" alt="National Day">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/women.jpg" style="width:100%" onclick="currentSlide(4)" alt="Women's Day">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/corona.jpg" style="width:100%" onclick="currentSlide(5)" alt="COVID-19">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="images/conference.jpg" style="width:100%" onclick="currentSlide(6)" alt="Conference">
+              </div>
+            </div>
+          </div>
+        <!--------js for slide show------------->
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
+                
+        <!-- Start Blog -->
+<div id="blog" class="blog-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box">
+                    <h2>EVENTS</h2>
+                    <p>These are the most important events happened to us! </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-inner">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="images/event.jpg" alt="" />
+                    </div>
+                    <div class="item-meta">
+                        <span class="dti">25 July 2018</span>
+                    </div>
+                    <h2>UMC organized CME on sports medicine</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    <a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-inner">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="images/good.jpg" alt="" />
+                    </div>
+                    <div class="item-meta">
+                        <span class="dti">25 July 2018</span>
+                    </div>
+                    <h2>UMC organized CME on Arthroplasty surgeries</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    <a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-inner">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="images/national.jpg" alt="" />
+                    </div>
+                    <div class="item-meta">
+                        <span class="dti">18 May 2018</span>
+                    </div>
+                    <h2>UMC celebrates National Day on 18<sup>th</sup> May</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    <a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-inner">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="images/women.jpg" alt="" />
+                    </div>
+                    <div class="item-meta">
+                        <span class="dti">25 October 2019</span>
+                    </div>
+                    <h2>UMC celebrated women's day and launched breast cancer awareness campaign</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+                    <a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-inner">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="images/corona.jpg" alt="" />
+                    </div>
+                    <div class="item-meta">
+                        <span class="dti">15 March 2020</span>
+                    </div>
+                    <h2>Preventive measures from covid-19 </h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    <a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blog-inner">
+                    <div class="blog-img">
+                        <img class="img-fluid" src="images/conference.jpg" alt="" />
+                    </div>
+                    <div class="item-meta">
+                        <span class="dti">8 April 2020</span>
+                    </div>
+                    <h2>Conference on public private collabration for disease control</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog -->
+
+<!-- --------------------start footer-------------------- -->
+        
+<div class="footer">
+    <div class="footer-content">
+        <!--about section-->
+        <div class="footer-section about">
+            <h2 class="logo-text"><p class="span">United </p>Medical Center</h2>
+            <p>Our Hospital strive to deliver nothing but the best service possible. 
+              We employ the latest medical technologies to assure accuracy and proficiency as your health and well being is our top priority.
+            </p>
+            <div class="comu">
+              <p class="span1"><i class="fa fa-phone-square"></i> &nbsp; 951-753-846</p>
+              <p class="span1"><i class="fa fa-envelope-square"></i> &nbsp; project@helwan.com</p>
+            </div>
+            <!--social section-->
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook-square facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter-square twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube-play youtube"></i></a>
+            </div>
+        </div>
+         <!--quick links section-->
+        <div class="footer-section links">
+          <h1>Quic<p class="span">k L</p>inks</h1>
+          
+          <div style="display: flex;">
+            <div>
+              <ul>
+                  <a href="events.html" target="_blank"><li>Events</li></a>
+                  <a href="../lab section/lab.html"target="_blank"><li>Labs</li></a>
+                  <a href="../IT Project/scan.html"target="_blank"><li>Scan</li></a>
+                  <a href="../IT Project/don.html"target="_blank"><li>Donation</li></a>
+                  <a href="../IT Project/rooms.html"target="_blank"><li>Rooms</li></a>
+              </ul>
+            </div>
+
+            <div>
+              <ul>
+                <a href="../IT Project/home.html"target="_blank"><li>Home</li></a>
+                <a href="../Doctors/doctors.html" target="_blank"><li>Doctors</li></a>
+                <a href="../IT Project/gallery.html"target="_blank"><li>Gallery</li></a>
+                <a href="../IT Project/salma.html"target="_blank"><li>Career</li></a>
+                <a href="#"><li>Terms and Condition</li></a>
+              </ul>
+            </div>
+          </div>
+      </div>
+  
+        <!--contact section-->
+        <div class="footer-section contact">
+            <h1>Feed<p class="span">back</p></h1>
+            <input type="email" name="email" class="text-input" placeholder="Your email address...">
+            <textarea style="height: 40px;" name="message" class="text-input" placeholder="Your message.."></textarea>
+            <button type="submit" class="btn">
+                <i class="fa fa-paper-plane send">  Send</i>
+            </button>
+        </div>
+    </div>
+    <!--bottom of the footer-->
+    <div class="footer-bottom">
+        &copy; United Medical Center 2020
+    </div>
+  </div>
+  
+  <!--end footer-->
+</body>
+</html>

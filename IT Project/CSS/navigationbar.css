@@ -1,0 +1,68 @@
+/*------------------------------------------------------------------
+    NAV BAR
+-------------------------------------------------------------------*/
+
+nav
+{
+    width: 100%;
+    position: relative;
+    background-color: #4682B4;
+    z-index: 10;
+    height: 80px;
+}
+ nav .contains
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    
+    
+}
+ nav .contains p
+{
+    padding: 15px 15px;
+    font-weight: bolder;
+    font-size: 28px;
+    text-transform: uppercase
+}
+ nav .contains p a
+{
+    color: white;
+    text-decoration: none;
+}
+ nav .contains p a i
+{
+    margin-right: 10px;
+	color: #303036
+    
+}
+ nav .contains p a span
+{
+    color: #303036
+}
+ nav .contains ul
+{
+    list-style: none;
+    display: flex
+}
+ nav .contains ul li
+{
+    padding: 23px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 30px;
+}
+ nav .contains ul li a
+{
+    text-decoration:none;
+    color: white
+}
+ nav .contains ul li a:hover
+{ 
+    color: #303036;
+    transition: .4s
+}
+
+.logo { margin : 20px 0px 0px ;}

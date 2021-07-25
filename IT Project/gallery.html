@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title> GALLARY </title>
+  <link rel='stylesheet' href='css/styleeee.css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+  </style>
+ </head>
+<body>
+  <!----------------------nav bar---------------------->
+  <nav>
+    <div class="contains">
+        <p><a href="#"><span><i class="fa fa-hand"></i>U</span>MC</a></p>
+        <ul>
+           <li><a href="home.html"target = "_blank">Home</a></li>
+          <li><a href="salma.html"target = "_blank">Career</a></li>
+          <li><a href="SPECIALITIES.html" target = "_blank">Specialties</a></li>
+          <li><a href="../Doctors/doctors.html"target = "_blank">Doctors</a></li>
+          <li><a href="NEWS.html" target = "_blank">News</a></li>
+          <li><a href="contact.html"target = "_blank">Contact Us</a></li>
+          <li><a href="covid.html"target = "_blank">COVID-19</a></li>
+          <li><a href="signup.html" target="_blanck">Sign Up</a></li>
+          <li><a href="login.html" target="_blanck">Log In</a></li>
+
+
+         </ul>      
+      </div>
+</nav>
+ 
+<img id="banner" src="images/speciality.jpg" alt="rii">
+<h2 style="text-align:center;
+    transform:translateY(-590%) translateX(30%); 
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #888;
+    margin-top: 120px;
+    font-size: 36px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    clear: both;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 15px !important;
+    color: #fff !important;
+    border-radius: 6px;"><span>P</span>HOTO<span>G</span>ALLARY</h2>
+<h3 style="font-family: Helvetica, Arial, sans-serif;transform:translateY(-550%) translateX(30PX);font-size:30px;">UNITED MEDICAL CENTER'S PHOTO GALLERY </h3>
+<P id="paragraph">
+									There is always something new happening at the Badr Al Samaa Group of Hospitals and Medical
+									Centres. Here’s<br> a closer look at some of the events that the Group has been a part of recently.
+									Aside from inauguration of new<br> branches, the gallery also includes awareness initiatives,
+									celebration of events and CMEs.
+</P>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/y1.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/y2.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/y3.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/y7.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/y8.jpg" style="width:50%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/y10.jpg" style="width:50%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/y1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Hospital From Outside">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/y2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Surgery&Outpatient">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/y3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Emergency Department">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/y7.jpg" style="width:100%" onclick="currentSlide(4)" alt="Our Doctors">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/y8.jpg" style="width:100%" onclick="currentSlide(5)" alt="Our Doctors">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/y10.jpg" style="width:100%" onclick="currentSlide(6)" alt="Our Doctors">
+    </div>
+  </div>
+</div>
+ 
+ <script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+ </script>
+ <h4 style="font-family: Helvetica, Arial, sans-serif;transform:translateY(-200%) translateX(30PX);font-size:30px;">OUR OPERATING ROOM</h4>
+ <P id="parg2"> we have a tradition of excellence in clinical care that has earned us a reputation as healthcare leaders in our community.<br>  Based on feedback from surgeons, clinicians, and our patient advisory council, we've recently created new physical spaces<br> in surgical services including, Pre-Admission Testing (PAT), Operating Rooms (OR), Pharmacy, Laboratory, and Rehabilitation.</P>
+ <div class="gallery">
+  <a target="_blank" href="images/y18.jpg">
+    <img src="images/y18.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room Without our Doctors</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/y12.jpg">
+    <img src="images/y12.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room Without our Doctors</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/y13.jpg">
+    <img src="images/y13.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Our  Room Without our Doctors</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/y14.jpg">
+    <img src="images/y14.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Our  Room With our Doctors</div>
+</div>
+ <div class="gallery">
+  <a target="_blank" href="images/y15.jpg">
+    <img src="images/y15.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room With our Doctors</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/y16.jpg">
+    <img src="images/y16.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room With our Doctors</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/y17.jpg">
+    <img src="images/y17.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room With our Doctors</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/y19.jpg">
+    <img src="images/y19.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room With our Doctors</div>
+</div>
+ <div class="gallery">
+  <a target="_blank" href="images/y20.jpg">
+    <img src="images/y20.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room With our Doctors</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/y11.jpg">
+    <img src="images/y11.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room Without our Doctors</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/y4.jpg">
+    <img src="images/y4.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room Without our Doctors</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/y5.jpg">
+    <img src="images/y5.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room With our Doctors</div>
+</div>
+ <div class="gallery">
+  <a target="_blank" href="images/y6.jpg">
+    <img src="images/y6.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Our Operating Room Without our Doctors</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/y21.jpg">
+    <img src="images/y21.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Our Rooms With Our patient And Visitors</div>
+</div>
+  

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&family=Noto+Sans+JP&family=Open+Sans:wght@700&display=swap');
+ /*------------------------------------------------------------------
+    NAV BAR
+-------------------------------------------------------------------*/
+
+nav
+{
+    margin-top: 49px;
+    transform: translateY(-432%);
+    width: 100%;
+    position: relative;
+    background-color: #4682B4;
+    z-index: 10;
+    height: 80px;
+}
+ nav .contains
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    
+    
+}
+ nav .contains p
+{
+    padding: 15px 15px;
+    font-weight: bolder;
+    font-size: 28px;
+    text-transform: uppercase
+}
+ nav .contains p a
+{
+    
+    color: white;
+    text-decoration: none;
+}
+ nav .contains p a i
+{
+    margin-right: 10px;
+	   color: #303036
+    
+}
+ nav .contains p a span
+{
+    color: #303036
+}
+ nav .contains ul
+{
+    list-style: none;
+    display: flex
+}
+ nav .contains ul li
+{
+    padding: 23px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 30px;
+}
+ nav .contains ul li a
+{
+    text-decoration:none;
+    color: white
+}
+ nav .contains ul li a:hover
+{ 
+    color: #303036;
+    transition: .4s
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+body
+{
+  height: 100vh;
+  background-image: url('../images/bgi.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  justify-content: center;
+}
+.caption
+{
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;
+  font-size: 30px;
+  margin: 40px 0 ;
+  text-align: center;
+  transform: translateY(-343%);
+  font-family: 'Carter One', cursive;
+  border: 1px solid #00a8e7;
+}
+.left-form
+{
+  position: relative;
+  width: 50%;
+  float: left;
+  margin: 20px 10px 0;
+  padding: 25px;
+  background: rgba(107, 113, 113, 0.28);
+  transform: translateY(17%);
+}
+legend
+{
+  background: rgba(107, 113, 113, 0.28);
+  border: 1px solid #00a8e7 ;
+  padding: 10px;
+  
+}
+label,input[type="text"],input[type="password"],input[type="number"],select {display: block;background: none}
+fieldset
+{
+  margin: 25px;
+  padding: 25px;
+  border: 1px solid #00a8e7;
+}
+.insert-field
+{
+  margin: 25px 0;
+  position: relative;
+  height: 50px;
+  width: 50%%;
+}
+.insert-field input
+{
+  padding: 8px 11px;
+    display: block;
+    width: 93%;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: inset 0px 0px 3px #ffffff;
+    -webkit-box-shadow: inset 0px 0px 3px #ffffff;
+    -moz-box-shadow: inset 0px 0px 3px #ffffff;
+    -o-box-shadow: inset 0px 0px 3px #ffffff;
+    -webkit-appearance: none;
+}
+
+input:focus
+{
+  border: 1px solid #1DA1F2;
+}
+.insert-field label
+{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translatey(-80%);
+  pointer-events: none;
+  color: grey;
+  font-size: 18px;
+  transition: .4S;
+}
+input:focus ~ label,
+input:valid ~ label
+{
+  transform: translatey(-33px);
+  background: white;
+  font-size: 16px;
+  color: #1DA1F2;
+}
+.right-form
+{
+    position: relative;
+    top: 2%;
+    right: 27%%;
+    width: 41%;
+    float: right;
+    margin: 20px 10px 0;
+    padding: 25px;
+    background: rgba(107, 113, 113, 0.28);
+    transform: translateY(15%);
+}
+.radio
+{
+  color: white;  
+}
+h2
+{
+  font-size: 17px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+span
+{
+  font-size: 19px;
+  display: inline-block;
+  margin-top: 10px;
+}
+input[type="submit"]
+{
+  position: absolute;
+  height: 5%;
+  transform: translateX(-177%)  translateY(-170%);
+  text-transform: capitalize;
+   background: #fc636b;
+    color: #fff;
+    padding: .7em 0em;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 2em;
+    -webkit-appearance: none;
+    cursor: pointer; 
+    
+}
